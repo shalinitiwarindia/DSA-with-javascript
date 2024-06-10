@@ -1,0 +1,13 @@
+var items = []
+
+var item1 = [1,2,3,4];
+var item2 = [4,5,6,7];
+var item3 = [8,9,10,11];
+
+items.push(item1);
+items.push(item2);
+items.push(item3);
+
+// Finding Number of rows
+var rows = items.length;
+console.log("Number of rows : ",rows);
