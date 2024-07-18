@@ -1,0 +1,37 @@
+function findMaxCodingStreak(N, arr) {
+  let max = -Infinity; // Max coding streak for a particular day
+  let global_max = -Infinity; // Max coding streak across all days
+  let count = 0; // Coding streak counter for a particular day
+  let global_count = 0; // Total coding streak counter across all days
+
+  for (let i = 0; i < N; i++) {
+      count = 0;
+      for (let j = 0; j < 1440; j++) {
+          if (arr[i][j] === 'C') {
+              global_count++;
+              count++;
+          } else {
+              global_max = Math.max(global_max, global_count);
+              max = Math.max(count, max);
+              count = 0; // Reset count for consecutive 'C's
+          }
+      }
+      // Update max for the last streak in the day
+      max = Math.max(count, max);
+  }
+  // Update global_max for the last streak across all days
+  global_max = Math.max(global_max, global_count);
+
+  console.log("Max coding streak for a particular day:", max);
+  console.log("Max coding streak across all days:", global_max);
+}
+
+// Example usage:
+let N = 3; // Example: Number of days
+let arr = [
+  "CCPCCCPC...", // Day 1 (1440 characters)
+  "CPCCCCCP...", // Day 2 (1440 characters)
+  "CCCCCCCA..."  // Day 3 (1440 characters)
+];
+
+findMaxCodingStreak(N, arr);
