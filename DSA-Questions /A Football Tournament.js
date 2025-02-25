@@ -10,19 +10,7 @@ function generateKeyValuePair(array) {
     return keyValuePair;
 }
 
-function aFootballTournament(array) {
-    const keyValuePair = generateKeyValuePair(array);
-    let max = 0;
-    let ans = '';
 
-    for (const key in keyValuePair) {
-        if (keyValuePair[key] > max) {
-            max = keyValuePair[key];
-            ans = key;
-        }
-    }
-
-    return ans;
 }
 
 // Example usage:
