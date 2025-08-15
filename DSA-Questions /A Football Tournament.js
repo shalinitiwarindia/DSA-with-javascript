@@ -19,11 +19,7 @@ function aFootballTournament(array) {
         if (keyValuePair[key] > max) {
             max = keyValuePair[key];
             ans = key;
-        }
-    }
 
-    return ans;
-}
 
 // Example usage:
 const teams = ["TeamA", "TeamB", "TeamA", "TeamC", "TeamB", "TeamA"];
