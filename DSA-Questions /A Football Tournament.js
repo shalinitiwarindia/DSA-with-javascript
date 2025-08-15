@@ -15,8 +15,7 @@ function aFootballTournament(array) {
     let max = 0;
     let ans = '';
 
-    for (const key in keyValuePair) {
-        if (keyValuePair[key] > max) {
+ 
        
 
 // Example usage:
