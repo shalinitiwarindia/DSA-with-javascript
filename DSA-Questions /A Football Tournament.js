@@ -9,7 +9,3 @@ function generateKeyValuePair(array) {
 
        
 
-// Example usage:
-const teams = ["TeamA", "TeamB", "TeamA", "TeamC", "TeamB", "TeamA"];
-const mostFrequentTeam = aFootballTournament(teams);
-console.log(mostFrequentTeam); // Output: TeamA
