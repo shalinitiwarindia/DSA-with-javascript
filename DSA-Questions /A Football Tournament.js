@@ -6,14 +6,7 @@ function generateKeyValuePair(array) {
         } else {
             keyValuePair[element] = 1;
         }
-    });
-    return keyValuePair;
-}
 
-function aFootballTournament(array) {
-    const keyValuePa
-   
- 
        
 
 // Example usage:
