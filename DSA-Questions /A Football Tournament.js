@@ -11,8 +11,7 @@ function generateKeyValuePair(array) {
 }
 
 function aFootballTournament(array) {
-    const keyValuePair = generateKeyValuePair(array);
-    let max = 0;
+    const keyValuePa
    
  
        
